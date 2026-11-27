@@ -28,7 +28,7 @@
   },
   "build": {
    "title": "Cardboard and labels",
-   "intro": "Makedo is the building he already does with tape, moved into cardboard boxes and held together with screws he can back out and use again. The label maker gives each build a name."
+   "intro": "Makedo is the building he already does with tape, moved into cardboard boxes and held together with screws he can back out and use again. The label maker gives each build a name, and the paint sticks give it color."
   },
   "proj": {
    "title": "Projectors",
@@ -36,7 +36,7 @@
   },
   "cozy": {
    "title": "In the teepee",
-   "intro": "He already owns a Yoto, so four of these feed it: blank cards for stories the family records, two story cards and a case to keep them in. The rest is for the time he spends inside, with a sleeping bag, a weighted puppy for his lap, things to build or turn in his hands, and books and puzzles that need nobody else. No floor cushion under $75 could be confirmed to fit, so there isn’t one."
+   "intro": "He already owns a Yoto, so four of these feed it: blank cards for stories the family records, two story cards and a case to keep them in. The rest is for the time he spends inside, with a sleeping bag, a weighted puppy for his lap and a weighted dog to carry, things to build or turn in his hands, and books and puzzles that need nobody else. The last two are a cloth mouse and a tent of its own, to set up inside his. No floor cushion under $75 could be confirmed to fit, so there isn’t one."
   },
   "sets": {
    "title": "Tiles and trains",
@@ -44,7 +44,7 @@
   },
   "lucha": {
    "title": "Luchador",
-   "intro": "A child-size lucha mask from a US seller was the hardest thing on this page to find. Most masks sold as youth sizes are cut for ages 6 to 12 or ship from abroad, and two Etsy shops had a kid size arriving in December."
+   "intro": "A child-size lucha mask from a US seller was the hardest thing on this page to find. Most masks sold as youth sizes are cut for ages 6 to 12 or ship from abroad, and two Etsy shops had a kid size arriving in December. Last is a foam pogo jumper, for when the wrestling turns into jumping."
   },
   "face": {
    "title": "Face paint and tattoos",
@@ -56,7 +56,7 @@
   },
   "dress": {
    "title": "A look of his own",
-   "intro": "The first cape is blank until he colors it, so what he wears starts as something he made. The others lean toward the ring: a luchador mask sewn onto green satin, and a gold lightning bolt fit for a wrestler’s entrance. We found no sequin cape in his size in stock at a US shop. Billy lets him put together a look on a wooden figure, and the three picture books are about people who made, or wanted, clothes of their own."
+   "intro": "The first cape is blank until he colors it, so what he wears starts as something he made. The others lean toward the ring: a luchador mask sewn onto green satin, and a gold lightning bolt fit for a wrestler’s entrance. We found no sequin cape in his size in stock at a US shop. Billy lets him put together a look on a wooden figure, and the three picture books are about people who made, or wanted, clothes of their own. The suitcase at the end holds clothes for the mouse from the teepee."
   },
   "gear": {
    "title": "Grown-up gear, small",
@@ -82,6 +82,7 @@
   "makedo-discover": "This is where tape leads: cardboard he cuts himself, joined with screws he can back out and use again. Start saving boxes now.",
   "makedo-explore": "A smaller box for finding out whether cardboard holds him the way tape does. The screws are just as small as the bigger kit’s.",
   "dymo": "Each letter is a turn of the wheel and a firm squeeze, and out comes a raised label for his latest build. Reviews disagree on how long it lasts.",
+  "kwikstix": "He twists up a stick and colors his cardboard builds with it, so there is no pot of paint open on the table. The seller says it dries in under 90 seconds and needs no brush or water.",
   "vmprojector": "It’s a used toy from about 2003, so ask the seller whether they tested it, and keep a spare bulb in mind. Take the reel out and it’s a flashlight.",
   "vmreels": "This is the part he’ll go through. It’s a used lot, so ask for a photo of the titles, or he may get forty national parks and one cartoon.",
   "vmtelescope": "The same reels play in it, which makes it the fallback if no Show & Tell turns up. It’s secondhand too, so ask whether the tripod comes with it.",
@@ -93,6 +94,7 @@
   "yotocase": "Cards go missing in blankets, and this gives the teepee one place to keep them.",
   "sleepingbag": "It turns the teepee into somewhere to sleep, at least until someone carries him to bed.",
   "lappad": "Three pounds of stuffed puppy across his legs at the end of a loud day. It asks him to sit still without anyone saying so.",
+  "weightedlab": "The lap pad lies flat across his legs, and this is a weighted dog he can carry around and hold. It weighs two and a half pounds and costs about a third as much.",
   "camelot": "Wooden blocks, a knight to get across them, and an hour in the teepee when he wants nobody else in there.",
   "patternblocks": "A flat cousin of his Magna-Tiles: he copies a picture shape by shape, and a bump of the knee doesn’t undo it.",
   "prismcube": "Something for his hands while a story plays, with no battery and nothing to put back together.",
@@ -101,6 +103,8 @@
   "dark": "For the teepee after dark, read by whichever lamp he’s holding.",
   "stickers": "The nearest thing here to tape: he sticks things down, peels them up and starts over, and nothing ends up on the furniture.",
   "glowpuzzle": "He builds it with a light on, then switches it off to see the skeletons. Plan on doing the edges with him the first time.",
+  "mouse": "Someone smaller than he is to look after in the teepee: a cloth mouse in pajamas who gets put to bed in a matchbox, with a blanket and a pillow. There are magnets in both paws.",
+  "mousetent": "A tent for the mouse, set up inside the one he sits in. It has a padded floor and a small window, and wooden sticks hold the door open under the awning. The mouse comes separately.",
   "railracers": "Clear rails clip onto tiles he already has and turn a tower into a ball run. The ball is small, so it goes on a shelf at night.",
   "toppers": "The one thing on the page that joins his two sets, laying printed track across a tile floor. It’s clearance stock and may not last.",
   "builder": "Two cranes that reach up and set tiles in place, which gives a tall build somewhere to go. Part of the box is more tiles.",
@@ -117,6 +121,7 @@
   "nino": "The luchador picture book, and the obvious one for a boy who wrestles. Bookshop.org is out until February, so the link goes to Barnes & Noble.",
   "training": "Comic panels let him follow the story before he can read it. A good one for the night after Niño.",
   "vamos": "Same author as Training Day, with pages crowded enough that he’ll still be finding things after he knows the story.",
+  "pogo": "Somewhere for the jumping to go: he stands on the foam, holds the handles and jumps, indoors or out. A built-in squeaker sounds on every jump, which stretches the rule about nothing loud.",
   "headlamp": "He has lights for the teepee already. This one goes where he looks, including into the cardboard fort the Makedo kit will sooner or later produce.",
   "safe": "Two locks on a metal box, for whatever a five-year-old decides is valuable. Keep a spare key somewhere he doesn’t know about.",
   "watch": "A reason to ask how long until dinner, and eventually a way to check the answer himself.",
@@ -163,7 +168,8 @@
   "billy": "He swaps magnetic outfits on a wooden figure, from knight to firefighter, and puts together a look without a pile of clothes on the floor.",
   "patrickkelly": "A picture-book life of the designer Patrick Kelly, who began as a boy at his grandmother’s table with a needle and thread. It treats clothes as something a person makes.",
   "julian": "Julián sees three women dressed as mermaids on the subway and builds his own costume from a curtain and a potted fern.",
-  "sparkleboy": "Casey likes his blocks, puzzles and dump truck, and he also wants a shimmery skirt, glittery nails and a sparkly bracelet like his sister’s. It’s the one book here that touches both the polish and the clothes."
+  "sparkleboy": "Casey likes his blocks, puzzles and dump truck, and he also wants a shimmery skirt, glittery nails and a sparkly bracelet like his sister’s. It’s the one book here that touches both the polish and the clothes.",
+  "mouseclothes": "He has asked for clothes, and this time he dresses someone else. Green pants with orange suspenders and a polka-dot hat, sized for the Little Brother mouse, come packed in their own metal suitcase. The mouse is sold separately."
  },
  "footer": "A personal list, with no affiliate links and no paid placements. Every listing was checked on November 27, 2026."
 }
