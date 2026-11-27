@@ -11,7 +11,7 @@ const words = copy.h1.split(' '); const lines = []; let cur = '';
 for (const w of words) { if ((cur + ' ' + w).trim().length > 15) { lines.push(cur.trim()); cur = w; } else cur += ' ' + w; }
 lines.push(cur.trim());
 
-const secs = ['tape','build','proj','cozy','sets','lucha','face','nails','dress','gear','wild','do'].map(k => copy.sections[k].title);
+const secs = ['build','proj','cozy','sets','lucha','face','nails','dress','gear','wild','do'].map(k => copy.sections[k].title);
 const TAPE = '#e3c98a', INK = '#1c1a16', PAPER = '#fbf6ea', MUTED = '#6b6455';
 
 // a roll of masking tape with its end pulled free, drawn flat

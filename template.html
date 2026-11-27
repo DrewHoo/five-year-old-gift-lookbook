@@ -171,7 +171,6 @@ footer{padding:26px 0 40px;font-size:14px;color:var(--muted)}
       <div class="three" id="three"></div>
     </div>
     <div class="boxes">
-      <div class="box"><h3 id="box1h"></h3><p id="box1"></p></div>
       <div class="box"><h3 id="box2h"></h3><p id="box2"></p></div>
     </div>
     <p class="legend" id="legend"></p>
@@ -196,7 +195,7 @@ footer{padding:26px 0 40px;font-size:14px;color:var(--muted)}
 <script>
 /*DATA*/
 const COPY = /*COPY*/;
-const SECS = ['tape','build','proj','cozy','sets','lucha','face','nails','dress','gear','wild','do'];
+const SECS = ['build','proj','cozy','sets','lucha','face','nails','dress','gear','wild','do'];
 const TIERS = [['all','All',()=>true],['u15','Under $15',p=>p<15],['u35','$15 to $35',p=>p>=15&&p<=35],['u75','$35 to $75',p=>p>35]];
 
 const $ = (s,el=document) => el.querySelector(s);
@@ -251,7 +250,6 @@ function render(){
   $('#sub').textContent = COPY.sub;
   $('#picksH').textContent = COPY.picks_h;
   $('#picksWhy').textContent = COPY.picks_why;
-  $('#box1h').textContent = COPY.box1h; $('#box1').textContent = COPY.box1;
   $('#box2h').textContent = COPY.box2h; $('#box2').textContent = COPY.box2;
   $('#legend').textContent = COPY.legend;
   $('#footer').textContent = COPY.footer;
