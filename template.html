@@ -170,9 +170,6 @@ footer{padding:26px 0 40px;font-size:14px;color:var(--muted)}
       <p id="picksWhy"></p>
       <div class="three" id="three"></div>
     </div>
-    <div class="boxes">
-      <div class="box"><h3 id="box2h"></h3><p id="box2"></p></div>
-    </div>
     <p class="legend" id="legend"></p>
     <div class="filters" id="filters" role="group" aria-label="Filter by price"><span class="lab">Price</span></div>
   </div>
@@ -250,7 +247,6 @@ function render(){
   $('#sub').textContent = COPY.sub;
   $('#picksH').textContent = COPY.picks_h;
   $('#picksWhy').textContent = COPY.picks_why;
-  $('#box2h').textContent = COPY.box2h; $('#box2').textContent = COPY.box2;
   $('#legend').textContent = COPY.legend;
   $('#footer').textContent = COPY.footer;
 
@@ -263,14 +259,9 @@ function render(){
       <div class="grid">${items.map(card).join('')}</div>
       <p class="empty" hidden>Nothing in this price range here.</p>
     </div></section>`;
-  }).join('') + `<section id="cut"><div class="wrap">
-      <div class="sec-head"><h2>${esc(S.cut?.title)}</h2><span class="count">${CUT.length} checked</span></div>
-      <p class="intro">${esc(S.cut?.intro)}</p>
-      <ul class="cutlist">${CUT.map(c=>`<li><span class="n">${c.url?`<a href="${c.url}" target="_blank" rel="noopener">${esc(c.name)}</a>`:esc(c.name)}</span><span class="r">${esc(c.why)}</span></li>`).join('')}</ul>
-    </div></section>`;
+  }).join('');
 
-  $('#pills').innerHTML = SECS.map(s=>`<a class="pill" href="#${s}">${esc(S[s]?.title)} · ${ITEMS.filter(i=>i.sec===s).length}</a>`).join('')
-    + `<a class="pill" href="#cut">${esc(S.cut?.title)} · ${CUT.length}</a>`;
+  $('#pills').innerHTML = SECS.map(s=>`<a class="pill" href="#${s}">${esc(S[s]?.title)} · ${ITEMS.filter(i=>i.sec===s).length}</a>`).join('');
 
   const by = id => ITEMS.find(i=>i.id===id);
   $('#three').innerHTML = TOP.map(by).filter(Boolean).map(it=>`<a href="#card-${it.id}" data-jump="${it.id}">
