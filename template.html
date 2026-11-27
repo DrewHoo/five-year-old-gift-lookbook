@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{title}}</title>
+<meta name="description" content="{{meta_description}}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{meta_description}}">
+<meta property="og:url" content="https://drewhoover.com/five-year-old-gift-lookbook/">
+<meta property="og:image" content="https://drewhoover.com/five-year-old-gift-lookbook/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{title}}">
+<meta name="twitter:description" content="{{meta_description}}">
+<meta name="twitter:image" content="https://drewhoover.com/five-year-old-gift-lookbook/og.png">
+<link rel="canonical" href="https://drewhoover.com/five-year-old-gift-lookbook/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='28' cy='32' r='22' fill='%23e3c98a'/%3E%3Ccircle cx='28' cy='32' r='10' fill='%23fbf6ea'/%3E%3Cpath d='M28 54h30v-9H40z' fill='%23e3c98a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://drewhoover.com/embed/back-bar.js" async></script>
+<script src="https://drewhoover.com/embed/giscus.js" async></script>
+<script src="https://drewhoover.com/embed/analytics.js" async></script>
+<style>
+:root{
+  --paper:#fbf6ea; --card:#fffdf8; --ink:#1c1a16; --muted:#6b6455; --hair:#e0d6bf;
+  --tape:#e3c98a; --tape-soft:#f3e7c6; --blue:#2463a8; --blue-soft:#dbe7f5;
+  --red:#b3261e; --gold:#c9992b; --ok:#2f6b45; --ok-bg:#e1eee4;
+  --warn-bg:#f8e7cf; --warn-ink:#7a4306; --track:#ece4d0;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-bottom:110px}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Inter,system-ui,sans-serif;padding-bottom:84px}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1200px;margin:0 auto;padding:0 16px}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
+
+/* masthead */
+.masthead{padding:52px 0 26px}
+.kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.kicker a{color:inherit;text-decoration:none;transition:.15s;border-bottom:1px solid color-mix(in srgb,currentColor 35%,transparent)}
+.kicker a:hover{border-bottom-color:currentColor}
+h1{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:clamp(38px,6.6vw,74px);line-height:.98;letter-spacing:-.02em;margin:14px 0 14px;max-width:17ch}
+h1 .tapeband{background:linear-gradient(transparent 58%,var(--tape) 58% 92%,transparent 92%)}
+.sub{font-size:clamp(17px,2.1vw,20px);max-width:740px;margin:0 0 18px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 6px}
+.pill{font:500 13px "IBM Plex Mono",monospace;border:1.5px solid var(--ink);border-radius:999px;padding:3px 10px;text-decoration:none}
+.pill:hover{background:var(--ink);color:var(--paper)}
+
+/* top picks + boxes */
+.anchor{margin:28px 0 8px;background:var(--card);border:1.5px solid var(--ink);padding:18px 18px 16px}
+.anchor h3{margin:0 0 4px;font:600 12px "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.anchor p{margin:0 0 12px;max-width:820px}
+.three{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.three a{display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:center;text-decoration:none;border:1px solid var(--hair);background:#fff;padding:8px}
+.three a:hover{border-color:var(--ink)}
+.three img{width:72px;height:72px;object-fit:contain;background:#fff}
+.three b{display:block;line-height:1.2}
+.three span{font:500 13px "IBM Plex Mono",monospace;color:var(--muted)}
+.boxes{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:14px 0 0}
+.box{background:var(--card);border:1.5px solid var(--hair);padding:14px 16px}
+.box h3{margin:0 0 6px;font:600 12px "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--blue)}
+.box p{margin:0;font-size:15px}
+.legend{font-size:14px;color:var(--muted);margin:16px 0 0;max-width:900px}
+
+/* price filter */
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:20px 0 0}
+.filters .lab{font:600 12px "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+.fchip{font:500 13px "IBM Plex Mono",monospace;border:1.5px solid var(--ink);background:transparent;color:var(--ink);padding:6px 11px;cursor:pointer;touch-action:manipulation}
+.fchip[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+
+/* sections */
+section{padding:44px 0 40px}
+.sec-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+.sec-head h2{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:clamp(28px,4vw,42px);margin:0;letter-spacing:-.01em}
+.sec-head .count{font:500 14px "IBM Plex Mono",monospace;color:var(--muted)}
+.intro{max-width:780px;margin:0 0 22px}
+#tape{background:var(--tape-soft)}
+#build{background:var(--paper)}
+#sets{background:var(--blue-soft)}
+#lucha{background:#8f1d17;color:#fdf3df}
+#lucha .intro{color:#f6dfc0}
+#lucha .sec-head .count{color:#f0c56a}
+#gear{background:#e7e2d6}
+#wild{background:var(--paper)}
+#do{background:#f3e7c6}
+#cut{background:#1c1a16;color:#ece7de}
+#cut .intro,#cut .sec-head .count{color:#a7a196}
+.empty{font:500 14px "IBM Plex Mono",monospace;opacity:.75;margin:0}
+
+/* grid + cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
+.card{background:var(--card);color:var(--ink);border:1.5px solid var(--ink);display:flex;flex-direction:column;position:relative}
+.card.sel{outline:3px solid var(--blue);outline-offset:-1px}
+.card[hidden]{display:none}
+.rank{position:absolute;top:10px;left:10px;z-index:2;background:var(--ink);color:var(--paper);font:600 13px "IBM Plex Mono",monospace;padding:2px 8px}
+.media{background:#fff;border-bottom:1.5px solid var(--ink)}
+.main{aspect-ratio:4/3;width:100%;object-fit:contain;cursor:zoom-in;background:#fff}
+.noimg{aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;
+  background:repeating-linear-gradient(-45deg,var(--tape-soft) 0 18px,#f8efd6 18px 36px);
+  font-family:Fraunces,Georgia,serif;font-weight:800;font-size:26px;line-height:1.1;color:var(--ink)}
+.thumbs{display:flex;gap:6px;padding:6px;border-top:1px solid var(--hair)}
+.thumbs img{width:50px;height:50px;object-fit:cover;border:1px solid var(--hair);cursor:pointer;background:#fff}
+.thumbs img.on{border-color:var(--ink)}
+.body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:10px;flex:1}
+.shop{font:600 12px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.card h3{margin:0;font-size:20px;line-height:1.2;font-weight:700}
+.variant{font-size:14px;color:var(--muted);margin-top:2px}
+.price{font:600 15px "IBM Plex Mono",monospace}
+.price small{font-weight:400;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:500 12px "IBM Plex Mono",monospace;padding:3px 7px;border-radius:3px;background:#efe9da;color:#3d3a34}
+.chip.age{background:var(--blue-soft);color:#173f6d}
+.chip.sup{background:var(--ok-bg);color:#14532d}
+.chip.flag{background:var(--warn-bg);color:var(--warn-ink)}
+.note{font-size:15px;margin:0}
+.rating{font:500 12.5px "IBM Plex Mono",monospace;color:var(--muted)}
+.actions{margin-top:auto;display:flex;gap:8px;flex-wrap:wrap}
+.buy{flex:1 1 150px;text-align:center;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:600;padding:11px 12px;border:1.5px solid var(--ink)}
+.buy:hover{background:var(--card);color:var(--ink)}
+.buy.alt{background:transparent;color:var(--ink);flex:0 1 auto}
+.add{flex:0 0 auto;font:600 13px Inter,sans-serif;border:1.5px solid var(--blue);color:var(--blue);background:transparent;padding:10px 12px;cursor:pointer;touch-action:manipulation}
+.card.sel .add{background:var(--blue);color:#fff}
+
+/* cut list */
+.cutlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:0 28px;margin:0;padding:0;list-style:none}
+.cutlist li{display:flex;flex-direction:column;gap:2px;padding:10px 0;border-bottom:1px solid #3a3833}
+.cutlist .n{font-weight:600}
+.cutlist .n a{text-decoration:none;border-bottom:1px solid #66625a}
+.cutlist .r{font:500 13px "IBM Plex Mono",monospace;color:#e8c98c}
+
+/* tally */
+.tally{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--ink);color:#fbf6ea;border-top:3px solid var(--tape)}
+.tally .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;padding-top:10px;padding-bottom:10px}
+.tally .ttl{font:600 12px "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--tape)}
+.tally .nums{font:500 14px "IBM Plex Mono",monospace;flex:1 1 240px}
+.tally .nums b{font-weight:600;color:#fff}
+.tally button{font:600 12px Inter,sans-serif;background:transparent;color:#fbf6ea;border:1px solid #6d675d;padding:5px 9px;cursor:pointer}
+@media (max-width:600px){.tally .wrap{gap:4px 10px;padding-top:7px;padding-bottom:7px}.tally .nums{font-size:12.5px}.tally .ttl{font-size:11px}}
+
+footer{padding:26px 0 40px;font-size:14px;color:var(--muted)}
+#comments{max-width:1200px;margin:0 auto;padding:0 16px 40px}
+.lb{position:fixed;inset:0;background:rgba(10,10,10,.88);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
+.lb.on{display:flex}
+.lb img{max-width:min(92vw,1100px);max-height:88vh;background:#fff}
+.lb .x{position:absolute;top:10px;right:18px;color:#fff;font-size:40px;cursor:pointer;line-height:1}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <div class="kicker"><a href="https://github.com/DrewHoo/shopping-lookbook" target="_blank" rel="noopener">A shopping lookbook</a> · <span id="kickerTail"></span></div>
+    <h1 id="h1"></h1>
+    <p class="sub" id="sub"></p>
+    <nav class="pills" id="pills"></nav>
+    <div class="anchor">
+      <h3 id="picksH"></h3>
+      <p id="picksWhy"></p>
+      <div class="three" id="three"></div>
+    </div>
+    <div class="boxes">
+      <div class="box"><h3 id="box1h"></h3><p id="box1"></p></div>
+      <div class="box"><h3 id="box2h"></h3><p id="box2"></p></div>
+    </div>
+    <p class="legend" id="legend"></p>
+    <div class="filters" id="filters" role="group" aria-label="Filter by price"><span class="lab">Price</span></div>
+  </div>
+</header>
+
+<main id="sections"></main>
+
+<footer><div class="wrap"><p id="footer"></p></div></footer>
+<div id="comments"></div>
+
+<div class="tally" role="region" aria-label="Shortlist">
+  <div class="wrap">
+    <span class="ttl">Shortlist</span>
+    <span class="nums" id="tallyNums"></span>
+    <button type="button" id="tallyClear">Clear</button>
+  </div>
+</div>
+<div class="lb" id="lb" role="dialog" aria-label="Image viewer"><span class="x" aria-label="Close">&times;</span><img id="lbimg" alt=""></div>
+
+<script>
+/*DATA*/
+const COPY = /*COPY*/;
+const SECS = ['tape','build','sets','lucha','gear','wild','do'];
+const TIERS = [['all','All',()=>true],['u15','Under $15',p=>p<15],['u35','$15 to $35',p=>p>=15&&p<=35],['u75','$35 to $75',p=>p>35]];
+
+const $ = (s,el=document) => el.querySelector(s);
+const esc = s => String(s??'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const money = n => '$' + (Number.isInteger(n) ? n : n.toFixed(2));
+const disp = (u,w) => u.includes('cdn.shopify.com') ? u+(u.includes('?')?'&':'?')+'width='+w
+  : u.includes('etsystatic') ? u.replace('il_fullxfull.', w>300?'il_794xN.':'il_170x135.')
+  : u.includes('/is/image/') ? u+'?wid='+w
+  : u.includes('contentstack.io') ? u+'&width='+w
+  : u.includes('cloudfront.net/images/products/515x515') && w<300 ? u.replace('515x515','96x96') : u;
+
+function card(it){
+  const imgs = (it.imgs||[]).map(u => ({full:u, d:disp(u,800), t:disp(u,120)}));
+  const chips = [
+    it.age ? `<span class="chip age">${esc(it.age)}</span>` : '',
+    it.sup ? `<span class="chip sup">${esc(it.sup)}</span>` : '',
+    ...(it.specs||[]).map(s=>`<span class="chip">${esc(s)}</span>`),
+    ...(it.flags||[]).map(f=>`<span class="chip flag">${esc(f)}</span>`)
+  ].join('');
+  const host = new URL(it.url).hostname.replace(/^www\./,'');
+  const media = imgs.length
+    ? `<img class="main" src="${imgs[0].d}" data-full="${imgs[0].full}" alt="${esc(it.brand+' '+it.name)}" loading="lazy">
+      ${imgs.length>1?`<div class="thumbs">${imgs.map((im,i)=>`<img src="${im.t}" data-disp="${im.d}" data-full="${im.full}" class="${i?'':'on'}" alt="" loading="lazy">`).join('')}</div>`:''}`
+    : `<div class="noimg">${esc(it.tile||it.name)}</div>`;
+  return `<article class="card" data-id="${it.id}" data-price="${it.price??''}">
+    <span class="rank">#${it.rank}</span>
+    <div class="media">${media}</div>
+    <div class="body">
+      <div class="shop">${it.brand===it.via?esc(it.brand):esc(it.brand)+' · '+esc(it.via)}</div>
+      <div><h3>${esc(it.name)}</h3>${it.variant?`<div class="variant">${esc(it.variant)}</div>`:''}</div>
+      <div class="price">${it.priceLabel?esc(it.priceLabel):money(it.price)}${it.priceNote?` <small>${esc(it.priceNote)}</small>`:''}</div>
+      <div class="chips">${chips}</div>
+      <p class="note">${esc((COPY.notes||{})[it.id]||'')}</p>
+      ${it.rating?`<div class="rating">${esc(it.rating)}</div>`:''}
+      <div class="actions">
+        <a class="buy" href="${it.url}" target="_blank" rel="noopener">${esc(it.cta||('Buy at '+(host.length>16?it.via:host)))} ↗</a>
+        ${it.also?`<a class="buy alt" href="${it.also.url}" target="_blank" rel="noopener">${esc(it.also.label)} ↗</a>`:''}
+        ${it.price!=null?`<button class="add" type="button" aria-pressed="false">+ Shortlist</button>`:''}
+      </div>
+    </div>
+  </article>`;
+}
+
+function render(){
+  $('#kickerTail').textContent = COPY.kicker_tail;
+  $('#h1').innerHTML = `<span class="tapeband">${esc(COPY.h1)}</span>`;
+  $('#sub').textContent = COPY.sub;
+  $('#picksH').textContent = COPY.picks_h;
+  $('#picksWhy').textContent = COPY.picks_why;
+  $('#box1h').textContent = COPY.box1h; $('#box1').textContent = COPY.box1;
+  $('#box2h').textContent = COPY.box2h; $('#box2').textContent = COPY.box2;
+  $('#legend').textContent = COPY.legend;
+  $('#footer').textContent = COPY.footer;
+
+  const S = COPY.sections||{};
+  $('#sections').innerHTML = SECS.map(sec=>{
+    const items = ITEMS.filter(i=>i.sec===sec).sort((a,b)=>a.rank-b.rank);
+    return `<section id="${sec}"><div class="wrap">
+      <div class="sec-head"><h2>${esc(S[sec]?.title)}</h2><span class="count" data-count="${sec}"></span></div>
+      <p class="intro">${esc(S[sec]?.intro)}</p>
+      <div class="grid">${items.map(card).join('')}</div>
+      <p class="empty" hidden>Nothing in this price range here.</p>
+    </div></section>`;
+  }).join('') + `<section id="cut"><div class="wrap">
+      <div class="sec-head"><h2>${esc(S.cut?.title)}</h2><span class="count">${CUT.length} checked</span></div>
+      <p class="intro">${esc(S.cut?.intro)}</p>
+      <ul class="cutlist">${CUT.map(c=>`<li><span class="n">${c.url?`<a href="${c.url}" target="_blank" rel="noopener">${esc(c.name)}</a>`:esc(c.name)}</span><span class="r">${esc(c.why)}</span></li>`).join('')}</ul>
+    </div></section>`;
+
+  $('#pills').innerHTML = SECS.map(s=>`<a class="pill" href="#${s}">${esc(S[s]?.title)} · ${ITEMS.filter(i=>i.sec===s).length}</a>`).join('')
+    + `<a class="pill" href="#cut">${esc(S.cut?.title)} · ${CUT.length}</a>`;
+
+  const by = id => ITEMS.find(i=>i.id===id);
+  $('#three').innerHTML = TOP.map(by).filter(Boolean).map(it=>`<a href="#card-${it.id}" data-jump="${it.id}">
+      ${it.imgs?.length?`<img src="${disp(it.imgs[0],160)}" alt="">`:'<span></span>'}
+      <div><b>${esc(it.short||it.name)}</b><span>${it.priceLabel?esc(it.priceLabel):money(it.price)}</span></div></a>`).join('');
+
+  $('#filters').insertAdjacentHTML('beforeend', TIERS.map(([k,l,f])=>{
+    const n = ITEMS.filter(i=>k==='all'||(i.price!=null&&f(i.price))).length;
+    return n ? `<button class="fchip" type="button" data-tier="${k}" aria-pressed="${k==='all'}">${l} · ${n}</button>` : '';
+  }).join(''));
+}
+
+/* price filter */
+function applyTier(k){
+  const f = TIERS.find(t=>t[0]===k)[2];
+  document.querySelectorAll('.fchip').forEach(b=>b.setAttribute('aria-pressed', b.dataset.tier===k));
+  SECS.forEach(sec=>{
+    const s = document.getElementById(sec); let n = 0;
+    s.querySelectorAll('.card').forEach(c=>{
+      const p = c.dataset.price===''?null:+c.dataset.price;
+      const show = k==='all' || (p!=null && f(p)); c.hidden = !show; if (show) n++;
+    });
+    $('[data-count]',s).textContent = n + (n===1?' pick':' picks');
+    $('.empty',s).hidden = n>0;
+  });
+}
+
+/* shortlist */
+let SEL;
+try { SEL = new Set(JSON.parse(localStorage.getItem('gift-shortlist')||'[]')); } catch(e){ SEL = new Set(); }
+function save(){ try { localStorage.setItem('gift-shortlist', JSON.stringify([...SEL])); } catch(e){} }
+function tally(){
+  const picked = ITEMS.filter(i=>SEL.has(i.id) && i.price!=null);
+  const total = picked.reduce((a,i)=>a+i.price,0);
+  $('#tallyNums').innerHTML = picked.length
+    ? `${picked.length} gift${picked.length>1?'s':''} · <b>$${total.toFixed(2)}</b> before shipping · ${picked.map(i=>esc(i.short||i.name)).join(', ')}`
+    : 'Nothing picked. Tap “+ Shortlist” on a card to add it up.';
+  document.querySelectorAll('.card').forEach(c=>{
+    const on = SEL.has(c.dataset.id); c.classList.toggle('sel', on);
+    const b = $('.add',c); if (b){ b.setAttribute('aria-pressed', on); b.textContent = on ? '✓ Shortlisted' : '+ Shortlist'; }
+  });
+}
+
+document.addEventListener('click', e=>{
+  const fc = e.target.closest('.fchip'); if (fc){ applyTier(fc.dataset.tier); return; }
+  const j = e.target.closest('[data-jump]');
+  if (j){ e.preventDefault(); applyTier('all'); document.querySelector(`.card[data-id="${j.dataset.jump}"]`)?.scrollIntoView({behavior:'smooth',block:'center'}); return; }
+  const add = e.target.closest('.add');
+  if (add){ const id = add.closest('.card').dataset.id; SEL.has(id)?SEL.delete(id):SEL.add(id); save(); tally(); return; }
+  if (e.target.closest('#tallyClear')){ SEL.clear(); save(); tally(); return; }
+  const th = e.target.closest('.thumbs img');
+  if (th){ const card = th.closest('.card'); const m = $('.main',card); m.src = th.dataset.disp; m.dataset.full = th.dataset.full;
+    card.querySelectorAll('.thumbs img').forEach(t=>t.classList.toggle('on', t===th)); return; }
+  const main = e.target.closest('.main');
+  if (main){ $('#lbimg').src = main.dataset.full; $('#lb').classList.add('on'); return; }
+  if (e.target.closest('#lb')) $('#lb').classList.remove('on');
+});
+// a CDN that hiccups once shouldn't leave a hole: retry a failed image twice
+document.addEventListener('error', e=>{
+  const im = e.target; if (!(im instanceof HTMLImageElement)) return;
+  const n = +(im.dataset.retry||0); if (n>=2) return; im.dataset.retry = n+1;
+  const src = im.getAttribute('src'); setTimeout(()=>{ im.src = src + (src.includes('?')?'&':'?') + 'retry=' + (n+1); }, 900*(n+1));
+}, true);
+document.addEventListener('keydown', e=>{ if (e.key==='Escape') $('#lb').classList.remove('on'); });
+render(); applyTier('all'); tally();
+</script>
+</body>
+</html>
