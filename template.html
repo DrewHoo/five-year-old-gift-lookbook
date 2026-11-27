@@ -78,6 +78,12 @@ section{padding:44px 0 40px}
 .intro{max-width:780px;margin:0 0 22px}
 #tape{background:var(--tape-soft)}
 #build{background:var(--paper)}
+#proj{background:#15172a;color:#f3ecd8}
+#proj .intro{color:#d9d3c2}
+#proj .sec-head .count{color:#e3c98a}
+#cozy{background:#262a44;color:#f3ecd8}
+#cozy .intro{color:#d9d3c2}
+#cozy .sec-head .count{color:#e3c98a}
 #sets{background:var(--blue-soft)}
 #lucha{background:#8f1d17;color:#fdf3df}
 #lucha .intro{color:#f6dfc0}
@@ -185,7 +191,7 @@ footer{padding:26px 0 40px;font-size:14px;color:var(--muted)}
 <script>
 /*DATA*/
 const COPY = /*COPY*/;
-const SECS = ['tape','build','sets','lucha','gear','wild','do'];
+const SECS = ['tape','build','proj','cozy','sets','lucha','gear','wild','do'];
 const TIERS = [['all','All',()=>true],['u15','Under $15',p=>p<15],['u35','$15 to $35',p=>p>=15&&p<=35],['u75','$35 to $75',p=>p>35]];
 
 const $ = (s,el=document) => el.querySelector(s);
