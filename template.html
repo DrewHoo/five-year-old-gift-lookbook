@@ -103,7 +103,7 @@ section{padding:44px 0 40px}
 .rank{position:absolute;top:10px;left:10px;z-index:2;background:var(--ink);color:var(--paper);font:600 13px "IBM Plex Mono",monospace;padding:2px 8px}
 .media{background:#fff;border-bottom:1.5px solid var(--ink)}
 .main{aspect-ratio:4/3;width:100%;object-fit:contain;cursor:zoom-in;background:#fff}
-.noimg{aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;
+.noimg{aspect-ratio:4/3;display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:center;text-align:center;padding:18px;
   background:repeating-linear-gradient(-45deg,var(--tape-soft) 0 18px,#f8efd6 18px 36px);
   font-family:Fraunces,Georgia,serif;font-weight:800;font-size:26px;line-height:1.1;color:var(--ink)}
 .thumbs{display:flex;gap:6px;padding:6px;border-top:1px solid var(--hair)}
@@ -201,7 +201,12 @@ const disp = (u,w) => u.includes('cdn.shopify.com') ? u+(u.includes('?')?'&':'?'
   : u.includes('etsystatic') ? u.replace('il_fullxfull.', w>300?'il_794xN.':'il_170x135.')
   : u.includes('/is/image/') ? u+'?wid='+w
   : u.includes('contentstack.io') ? u+'&width='+w
+  : u.includes('amplience.net') ? u+'?w='+w
   : u.includes('cloudfront.net/images/products/515x515') && w<300 ? u.replace('515x515','96x96') : u;
+
+// a picture reel drawn flat: fourteen windows around a paper disc
+const REEL = (()=>{ let w=''; for(let i=0;i<14;i++){ const a=i*360/14; w+=`<rect x="-9" y="-78" width="18" height="15" rx="2" transform="rotate(${a})" fill="#1c1a16"/>`; }
+  return `<svg viewBox="-100 -100 200 200" width="150" height="150" aria-hidden="true"><circle r="92" fill="#fffdf8" stroke="#1c1a16" stroke-width="3"/>${w}<circle r="7" fill="#1c1a16"/><circle r="40" fill="none" stroke="#e0d6bf" stroke-width="2"/></svg>`; })();
 
 function card(it){
   const imgs = (it.imgs||[]).map(u => ({full:u, d:disp(u,800), t:disp(u,120)}));
@@ -215,7 +220,7 @@ function card(it){
   const media = imgs.length
     ? `<img class="main" src="${imgs[0].d}" data-full="${imgs[0].full}" alt="${esc(it.brand+' '+it.name)}" loading="lazy">
       ${imgs.length>1?`<div class="thumbs">${imgs.map((im,i)=>`<img src="${im.t}" data-disp="${im.d}" data-full="${im.full}" class="${i?'':'on'}" alt="" loading="lazy">`).join('')}</div>`:''}`
-    : `<div class="noimg">${esc(it.tile||it.name)}</div>`;
+    : `<div class="noimg">${it.art==='reel'?REEL:''}<span>${esc(it.tile||it.name)}</span></div>`;
   return `<article class="card" data-id="${it.id}" data-price="${it.price??''}">
     <span class="rank">#${it.rank}</span>
     <div class="media">${media}</div>
